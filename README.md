@@ -48,7 +48,9 @@ Usage:
   github-dice [OPTIONS]
 
 Application Options:
+  -q, --query=    query strings for search issue/pull-request. (default: is:issue)
   -n, --dry-run   show candidates and list issues, without assign.
+  -f, --force     if true, reassign even if already assigned.
   -o, --run-once  if true, assign just once issue.
   -d, --debug
 
