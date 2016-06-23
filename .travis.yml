@@ -2,6 +2,7 @@ language: go
 
 before_install:
   - make setup
+  - go get golang.org/x/oauth2
 
 script:
  - make travis
