@@ -1,0 +1,6 @@
+.env*
+!.env.sample
+*.swp
+github-dice
+nohup.out
+!.gitkeep

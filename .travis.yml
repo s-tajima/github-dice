@@ -1,0 +1,7 @@
+language: go
+
+before_install:
+  - make setup
+
+script:
+ - make travis
