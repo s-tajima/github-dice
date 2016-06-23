@@ -1,7 +1,9 @@
 github-dice
 ---
-A useful tool for assigning someone to GitHub Issue, like a rolling dice.
 [![Build Status](https://travis-ci.org/s-tajima/github-dice.svg?branch=master)](https://travis-ci.org/s-tajima/github-dice)
+
+A useful tool for assigning someone to GitHub Issue, like a rolling dice.
+
 
 ```
 $ ./github-dice
