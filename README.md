@@ -6,10 +6,9 @@ A useful tool for assigning someone to GitHub Issue, like a rolling dice.
 
 
 ```
-$ ./github-dice
-2016/06/23 19:49:45 Candidates are s-tajima, chocopie116, dkkoma
-2016/06/23 19:49:46 Assigned s-tajima to #41 (some awsome issue)
-2016/06/23 19:49:46 Assigned chocopie116 to #42 (some bothersome issue )
+$ ./github-dice -d
+2016/06/23 19:49:45 Candidates are [s-tajima chocopie116 dkkoma]
+2016/06/23 19:49:46 #9999 https://github.com/s-tajima/github-dice/issues/9999 issue's title => author:s-tajima assigned:chocopie116
 ```
 
 ## Index
@@ -51,10 +50,14 @@ Usage:
   github-dice [OPTIONS]
 
 Application Options:
-  -q, --query=    query strings for search issue/pull-request. (default: is:issue)
-  -n, --dry-run   show candidates and list issues, without assign.
-  -f, --force     if true, reassign even if already assigned.
-  -o, --run-once  if true, assign just once issue.
+  -q, --query         query strings for search issue/pull-request. (default: "type:pr is:open")
+  -c, --comment       issues's comment when assigned. (default: ":game_die:")
+  -n, --dry-run       show candidates and list issues, without assign.
+  -f, --force         if true, reassign even if already assigned.
+  -o, --run-once      if true, assign just once issue.
+  -a, --assign-author if true, issue/pr's author also assigns.
+  -l, --limit         maximum number of issues per running command. (default: 0)
+  -e, --exempt-users  user names separated by comma who exempt assignee.
   -d, --debug
 
 Help Options:

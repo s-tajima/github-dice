@@ -1,5 +1,5 @@
 .env*
-!.env.sample
+!.env.template
 *.swp
 github-dice
 nohup.out
