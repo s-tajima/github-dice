@@ -14,8 +14,8 @@ type Options struct {
 	Comment       string `short:"c" long:"comment" default:":game_die:" description:"Comment. Would be posted before assigned."`
 	DryRun        bool   `short:"n" long:"dry-run" description:"If true, show candidates and list Issues, without assign."`
 	Force         bool   `short:"f" long:"force" description:"If true, reassign even if already assigned."`
-	RunOnce       bool   `short:"o" long:"run-once" description:"If true, assign assign only one Issue.`
-	AssignAuthor  bool   `short:"a" long:"assign-author" description:"If true, Issue's author also assigns.`
+	RunOnce       bool   `short:"o" long:"run-once" description:"If true, assign assign only one Issue."`
+	AssignAuthor  bool   `short:"a" long:"assign-author" description:"If true, Issue's author also assigns."`
 	Limit         int    `short:"l" long:"limit" default:"0" description:"A maximum number of assign Issues."`
 	ExemptedUsers string `short:"e" long:"exempted-users" default:"" description:"User names separated by comma who exempt assignee."`
 	Debug         bool   `short:"d" long:"debug"`
