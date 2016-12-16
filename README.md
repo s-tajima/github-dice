@@ -12,6 +12,7 @@ $ ./github-dice -d
 
 ## Index
 
+* [Concepts](#concepts)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Configure](#configure)
@@ -43,7 +44,7 @@ Set your configuration as Environment Variables.
 export GITHUB_ACCESS_TOKEN=
 export GITHUB_ORGANIZATION=
 export GITHUB_REPO=
-export GITHUB_TEAM=   # github-dice works only Issues/Pull Requests that be created by this team members.
+export GITHUB_TEAM= # github-dice works only Issues/Pull Requests that be created by this team members.
 ```
 You can use .env file as well.
 
