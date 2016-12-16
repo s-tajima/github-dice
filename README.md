@@ -18,6 +18,12 @@ $ ./github-dice -d
 * [Usage](#usage)       
 * [License](#license)    
 
+## Concepts
+
+* To review codes wrote by other members of your team is good for your product and your skills.
+* But frequently, code reviewer would tend to biased to some of the team members.
+* For improving all of your team members skills, let's elect code reviewers by roll a dice.
+
 ## Requirements
 
 github-dice requires the following to run:
