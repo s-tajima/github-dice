@@ -10,14 +10,14 @@ import (
 )
 
 type Options struct {
-	Query         string `short:"q" long:"query" default:"type:pr is:open" description:"query strings for search issue/pull-request."`
-	Comment       string `short:"c" long:"comment" default:":game_die:" description:"issue's comment when assigned."`
-	DryRun        bool   `short:"n" long:"dry-run" description:"show candidates and list issues, without assign."`
-	Force         bool   `short:"f" long:"force" description:"if true, reassign even if already assigned."`
-	RunOnce       bool   `short:"o" long:"run-once" description:"if true, assign just once issue."`
-	AssignAuthor  bool   `short:"a" long:"assign-author" description:"if true, assign issue's author."`
-	Limit         int    `short:"l" long:"limit" default:"0" description:"maximum number of issues per running command."`
-	ExemptedUsers string `short:"e" long:"exempted-users" default:"" description:"user names separated by comma who exempt assignee."`
+	Query         string `short:"q" long:"query" default:"type:pr is:open" description:"Query strings. For search Issues/Pull Requests."`
+	Comment       string `short:"c" long:"comment" default:":game_die:" description:"Comment. Would be posted before assigned."`
+	DryRun        bool   `short:"n" long:"dry-run" description:"If true, show candidates and list Issues, without assign."`
+	Force         bool   `short:"f" long:"force" description:"If true, reassign even if already assigned."`
+	RunOnce       bool   `short:"o" long:"run-once" description:"If true, assign assign only one Issue.`
+	AssignAuthor  bool   `short:"a" long:"assign-author" description:"If true, Issue's author also assigns.`
+	Limit         int    `short:"l" long:"limit" default:"0" description:"A maximum number of assign Issues."`
+	ExemptedUsers string `short:"e" long:"exempted-users" default:"" description:"User names separated by comma who exempt assignee."`
 	Debug         bool   `short:"d" long:"debug"`
 }
 
